@@ -9,6 +9,12 @@
         </div>
 
         <div class="col-sm-12 form-group">
+          <label for="name">Description</label>
+          <input type="text" id="description" name="description" [ngModel]="officer?.description" #description="ngModel"
+            class="form-control required" size="120" max="320" required>
+        </div>
+
+        <div class="col-sm-12 form-group">
           <label for="email">Email</label>
           <input type="text" id="email" name="email" [ngModel]="officer?.email" #email="ngModel"
             class="form-control required" size="120" max="255" required
