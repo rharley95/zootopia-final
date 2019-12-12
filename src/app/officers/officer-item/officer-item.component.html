@@ -1,0 +1,12 @@
+<a href="#" class="list-group-item" 
+[routerLink]="['/officers', officer?.id]"
+routerLinkActive="active"
+style="width: 460px;">
+        <div class="pull-left">
+          <h4 class="list-group-item-heading">{{ officer.name }}</h4>
+          <p class="list-group-item-text">{{ officer.email }}</p>
+        </div>
+        <span class="pull-right">
+            <img [src]="officer.img" alt="" class="img-responsive" srcset="" style="max-height: 100px;">
+        </span>
+    </a>

@@ -1,0 +1,27 @@
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{officer.name}}</h1>
+    </div>
+
+<div class="row">
+    <div class="col-xs-12">
+            <div class="img">
+                    <img src="{{officer.img}}" class="img-responsive" style="max-height: 300px;">
+            </div>
+            <div class="pull-right btn-toolbar">
+                <a class="btn btn-primary" style="cursor: pointer;" [routerLink]="[ '/officers', officer?.id, 'edit']">Edit</a>
+                <!-- WHY DID THAT WORK? SEE CMS CODE -->
+                <a class="btn btn-danger" style="cursor: pointer;" (click)="onDelete();">Delete</a>
+              </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <p>{{officer.email}}</p>
+        <p>{{officer.phone}}</p>
+        <p>{{officer.description}}</p>
+
+    </div>
+</div>

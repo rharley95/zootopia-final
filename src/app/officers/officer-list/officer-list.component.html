@@ -1,0 +1,18 @@
+<div class="row">
+        <div class="col-md-12">
+            <h1>Zootopia Officers</h1>
+            
+          <button class="btn btn-success" [routerLink]="['new']">New Officer</button>
+          <hr />
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+              
+              <app-officer-item
+              *ngFor="let officerEl of officers"
+              [officer]="officerEl"
+              (officerSelected)="onOfficerSelected(officerEl)"></app-officer-item>
+          </div>
+        </div>
+      </div>

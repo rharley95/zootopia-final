@@ -1,0 +1,19 @@
+<div class="case-list">
+        <div class="col-lg-12">
+            <h1>Zootopia Cases</h1>
+        </div>
+        <hr>
+        <div>
+          <div >
+              <a href="#" class="list-group-item" *ngFor="let case of cases">
+                  <div>
+                    <h4 class="list-group-item-heading">{{ case.name }}</h4>
+                    <p class="list-group-item-text">{{ case.description }}</p>
+                  </div>
+              </a>
+              <app-officer-item
+              *ngFor="let officer of officers"
+              ></app-officer-item>
+          </div>
+        </div>
+      </div>
